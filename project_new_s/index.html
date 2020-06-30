@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <div id="app">
+      {{message}}
+  </div>
+  <script>
+    //   뷰인스턴스 생성자
+    // el , data : 뷰인스턴스의 옵션 속성
+    //  methods,created,template.
+    // template:화면에 표시할 html.css등의
+    //마크업 요소를 정의하는 속성
+    //methods:화면로직 제어와 관계된 메서드를 정의 하는 속성
+    //(이벤트와 화면 동작과 관련된 로직)
+    //created:뷰인스턴스가 생성되자 마자 실행할 로직을
+    //정의할수 있는 속성
+      new Vue({
+          el:"#app",
+          data:{
+              message:"안녕하세요 오늘도 비가 옵니다"
+            }
+      })
+  </script>
+</body>
+</html>
